@@ -60,7 +60,7 @@ jobs:
           cat feeds.conf.default
           cp -r ../lede/package/lean package/
           sed -i 's/https:\/\/github.com\/friendlyarm\/friendlywrt_project_luci^28fc0fa6d90a8eb3db0c93e749ed5aefdbfc4f8a/https:\/\/github.com\/coolsnowwolf\/luci/' feeds.conf.default
-          sed -i 's/https:\/\/git.openwrt.org\/packages.git/https:\/\/github.com\/coolsnowwolf\/packages/' feeds.conf.default 
+          sed -i 's/https:\/\/github.com\/friendlyarm\/friendlywrt_project_packages^5b22f3f59c03412200fe4815d833943f953edf2b/https:\/\/github.com\/coolsnowwolf\/packages/' feeds.conf.default 
           df -h
           cat feeds.conf.default
       
