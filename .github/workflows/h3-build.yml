@@ -78,6 +78,7 @@ jobs:
       - name: Update Feeds
         run: |
           cd friendlywrt-h3/friendlywrt
+          rm -rf ./feeds
           ./scripts/feeds update -a
           ./scripts/feeds install -a
           
